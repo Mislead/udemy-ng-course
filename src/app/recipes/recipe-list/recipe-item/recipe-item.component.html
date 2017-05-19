@@ -1,0 +1,14 @@
+<a
+  style="cursor: pointer; "
+  [routerLink]="[index]"
+  routerLinkActive="active"
+  class="list-group-item list-group-item-action justify-content-between">
+  <!--<app-recipe-item recipe="recipe"></app-recipe-item>-->
+  <div class="float-left">
+    <h5>{{recipe.name}}</h5>
+    <p class="list-group-item-text">{{recipe.description}}</p>
+  </div>
+  <div class="float-right">
+    <img src={{recipe.imagePath}} alt="Recipe Image" class="img-fluid" style="max-height: 50px;">
+  </div>
+</a>
